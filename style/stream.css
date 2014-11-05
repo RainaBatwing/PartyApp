@@ -1,0 +1,86 @@
+/* stream specific stuff */
+html { background-color: ghostwhite; }
+
+/*.stream {
+  width: 600px;
+}*/
+
+.stream .item {
+  position: relative;
+  background-color: white;
+  width: 640px;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 1px 0px rgba(0,0,0,0.02);
+  margin: 20px 10px;
+}
+
+.stream .item .miniprofile {
+  display: block;
+  overflow: hidden;
+  padding: 10px 0;
+  border-bottom: 1px dashed rgba(0,0,0,0.05);
+  line-height: 140%;
+}
+
+.stream .miniprofile img.avatar {
+  float: left;
+  width: 45px;
+  height: 45px;
+  margin: 0 10px;
+}
+
+.stream .miniprofile .name {
+  display: block;
+}
+
+.stream .miniprofile .time {
+  font-weight: lighter;
+}
+
+.content.static > * {
+  margin-left: 10px;
+  margin-right: 10px
+}
+
+.content.static > img {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.content.static blockquote {
+  border-left: 3px solid lightblue;
+  padding-left: 10px;
+  margin-left: 12px;
+}
+
+.stream .item .notes-controller {
+  padding: 10px;
+  overflow: hidden;
+  border-top: 1px dashed rgba(0,0,0,0.05);
+  text-align: right;
+}
+
+.stream .item .notes-controller .notes-info {
+  position: absolute;
+  left: 10px;
+}
+
+.stream .item .btn {
+  /*background: none;*/
+  border: 0 none;
+  outline: 0 none;
+  background-color: black;
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+  -webkit-mask-image: url(typicons/arrow-repeat.svg);
+}
+
+.stream .item .btn:active { background-color: green; }
+
+.stream .item .btn.reblog { -webkit-mask-image: url(typicons/arrow-repeat.svg); }
+.stream .item .btn.heart.inactive { -webkit-mask-image: url(typicons/heart-outline.svg); }
+.stream .item .btn.heart.active { -webkit-mask-image: url(typicons/heart.svg); background-color: rgb(255, 40, 40);}
+.stream .item .btn.menu { -webkit-mask-image: url(typicons/th-menu.svg); }

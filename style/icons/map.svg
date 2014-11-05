@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g>
+        <g id="Map">
+            <g>
+                <rect x="0" y="0" width="100" height="100" style="fill:rgb(69,221,56);"/>
+            </g>
+            <g>
+                <path d="M-4.65841,83.9483L50,50L-4.65841,16.0267L-4.65841,83.9483Z" style="fill:rgb(90,213,69);"/>
+            </g>
+            <g>
+                <path d="M104.683,83.9483L50.0125,49.9875L16.927,70.8054L74.506,107.464L104.683,107.464L104.683,83.9483" style="fill:rgb(129,249,142);"/>
+            </g>
+            <g>
+                <path d="M50.0125,50L7.23947,24.1246L47.4193,1.0148L90.8539,25.4579L50.0125,50Z" style="fill:rgb(58,149,42);"/>
+            </g>
+            <g>
+                <path d="M87.1543,25.5703L31.5995,-6.06126L70.8721,-25.8489L120.789,5.17191L87.1543,25.5703Z" style="fill:rgb(129,249,142);"/>
+            </g>
+        </g>
+        <g id="Road 2">
+            <path d="M-12.7951,89.6059L112.82,10.3692L-12.7951,89.6059Z" style="fill:none;stroke-width:20.83px;stroke:rgb(53,58,70);"/>
+        </g>
+        <g id="Road 1">
+            <path d="M112.82,89.6059L-12.7951,10.3692L112.82,89.6059Z" style="fill:none;stroke-width:20.83px;stroke:rgb(53,58,70);"/>
+        </g>
+        <g id="Pin">
+            <path d="M50,50L50,34.7852" style="fill:none;stroke-width:6px;stroke:rgb(211,192,255);"/>
+            <g>
+                <path d="M50.0485,13.9901C56.676,13.9901 62.0485,19.3409 62.0485,25.9415C62.0485,32.5421 56.676,37.893 50.0485,37.893C43.4211,37.893 38.0485,32.5421 38.0485,25.9415C38.0485,19.3409 43.4211,13.9901 50.0485,13.9901Z" style="fill:rgb(84,132,255);"/>
+            </g>
+        </g>
+    </g>
+</svg>

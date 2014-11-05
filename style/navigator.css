@@ -1,0 +1,154 @@
+html {
+  background-color: slategrey;
+  overflow: hidden;
+}
+
+body {
+  -webkit-app-region: drag;
+}
+
+.osx-stoplights {
+  display: table;
+  margin: 0 4px;
+  -webkit-filter: contrast(110%); /* dodgy hack to work around chrome making image pale */
+  -webkit-app-region: no-drag;
+}
+
+.osx-stoplights button {
+  background: none;
+  border: none;
+  outline: none;
+  background-size: 12px 48px;
+  background-position: center bottom;
+  width: 12px;
+  height: 12px;
+  margin: 4px;
+  display: table-cell;
+}
+
+/* doesn't look right - need to fix later */
+/*.unfocused .osx-stoplights button {
+  -webkit-filter: saturate(0%);
+}*/
+
+.osx-stoplights button:hover:active {
+  -webkit-filter: brightness(75%);
+  filter: brightness(75%);
+}
+
+/* overlay symbols on mouse over, using multiple backgrounds */
+.osx-stoplights:hover button {
+  background-position-y: 24px;
+}
+
+body.fullscreen .osx-stoplights:hover button {
+  background-position-y: 36px;
+}
+
+body.option-key .osx-stoplights:hover button {
+  background-position-y: 48px;
+}
+
+.osx-stoplights button.close { background-image: url('icons/osx-stoplights/close@2x.png') }
+.osx-stoplights button.minimize { background-image: url('icons/osx-stoplights/minimize@2x.png') }
+.osx-stoplights button.fullscreen { background-image: url('icons/osx-stoplights/fullscreen@2x.png') }
+
+#sidebar {
+  width: 200px;
+}
+
+/* styling for nav strip of icons along left side of window */
+.navstrip {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  width: 200px;
+  bottom: 0;
+}
+
+.navstrip button {
+  display: flex;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  text-align: left;
+  width: 200px;
+  height: 60px;
+  font-family: inherit;
+  font-size: 130%;
+  font-weight: lighter;
+  line-height: 50px;
+  margin-left: 10px;
+  -webkit-app-region: no-drag;
+}
+
+.navstrip button img {
+  position: relative;
+  box-shadow: 0 0 0 0 ghostwhite;
+  transition-duration: 0.08s;
+  transition-property: box-shadow, margin-right;
+}
+.navstrip button.selection img {
+  box-shadow: 0 0 0 5px ghostwhite;
+  margin-right: 5px;
+}
+
+.navstrip button img {
+  border-radius: 9999px;
+  width: 50px; height: 50px;
+}
+
+.navstrip button label {
+  transition-duration: 0.25s;
+  transition-property: margin-left;
+  margin-left: 60px;
+}
+
+@media (min-width: 860px) {
+  .navstrip button label { margin-left: 15px; }
+}
+.navstrip-open .navstrip button label { margin-left: 15px; }
+
+
+/*** Content Box (right pane) ***/
+.content-box {
+  background-color: ghostwhite;
+  position: absolute;
+  top: 0;
+  left: 70px;
+  width: 660px;
+  bottom: 0;
+  transition-duration: 0.25s;
+  transition-property: left;
+}
+
+@media (min-width: 860px) {
+  .content-box { left: 200px; }
+}
+.navstrip-open .content-box { left: 200px; }
+
+.content-box > .filter-bar {
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 24px;
+  text-align: center;
+}
+
+.content-box > .filter-bar button,
+.content-box > .filter-bar select,
+.content-box > .filter-bar a {
+  -webkit-app-region: no-drag;
+}
+
+.content-box > .sub-page {
+  -webkit-app-region: no-drag;
+  position: absolute;
+  top: 24px; bottom: 0;
+  left: 0; width: 100%;
+}
+
+.content-box > .sub-page iframe {
+  border: 0 none;
+  width: 100%;
+  height: 100%;
+}

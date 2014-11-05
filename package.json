@@ -1,0 +1,24 @@
+{
+  "name": "Party",
+  "version": "0.0.1",
+  "homepage": "https://github.com/rainabatwing/partyapp",
+  "bugs": "https://github.com/rainabatwing/partyapp/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rainabatwing/partyapp.git"
+  },
+  "main": "navigator.html",
+  "dependencies": {},
+  "window": {
+    "title": "Party",
+    "icon": "style/icons/app.png",
+    "toolbar": false,
+    "frame": false,
+    "width": 730,
+    "height": 500,
+    "min_width": 730,
+    "min_height": 400,
+    "resizable": true,
+    "position": "center"
+  }
+}

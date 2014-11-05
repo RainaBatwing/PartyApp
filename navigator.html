@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style/global.css">
+  <link rel="stylesheet" href="style/navigator.css">
+  <!--<script src="node_modules/jquery/dist/jquery.js"></script>-->
+  <script src="code/common.js" defer></script>
+  <script src="code/navigator.js" defer></script>
+</head><body class="navigator">
+  <div id="sidebar">
+    <!-- on mac os, stoplights are the system window UI controls -->
+    <div class="osx-stoplights system-ui">
+      <button class="close"></button>
+      <button class="minimize"></button>
+      <button class="fullscreen"></button>
+    </div>
+
+    <!-- mode selection icons running down the left side -->
+    <div class="navstrip">
+      <button id="btn-profile">
+        <img src="style/raina/square.png">
+        <label>Profile</label>
+      </button>
+      <button id="btn-stream" class="selection">
+        <img src="style/icons/stream.svg">
+        <label>Stream</label>
+      </button>
+      <button id="btn-events">
+        <img src="style/icons/map.svg">
+        <label>Events</label>
+      </button>
+      <button id="btn-friends">
+        <img src="style/icons/cuddlepuddle.svg">
+        <label>Friends</label>
+      </button>
+    </div>
+
+  </div>
+
+  <div class="content-box">
+    <div class="filter-bar">
+      <select>
+        <option selected>Everyone</option>
+        <option>Besties</option>
+        <option>Team Alpha</option>
+      </select>
+    </div>
+    <div class="sub-page"><iframe src="stream.html"></iframe></div>
+  </div>
+</body></html>
